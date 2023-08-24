@@ -67,16 +67,56 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="DetalleDiscos.aspx" />
+    <Content Include="DiscosListar.aspx" />
+    <Content Include="FormularioDiscos.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetalleDiscos.aspx.cs">
+      <DependentUpon>DetalleDiscos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetalleDiscos.aspx.designer.cs">
+      <DependentUpon>DetalleDiscos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DiscosListar.aspx.cs">
+      <DependentUpon>DiscosListar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DiscosListar.aspx.designer.cs">
+      <DependentUpon>DiscosListar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioDiscos.aspx.cs">
+      <DependentUpon>FormularioDiscos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormularioDiscos.aspx.designer.cs">
+      <DependentUpon>FormularioDiscos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master.Master.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master.Master.designer.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Master.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -90,13 +130,13 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Dominio\Dominio.csproj">
-      <Project>{3a64746c-76cf-4027-96a5-6e7b36cf68b5}</Project>
-      <Name>Dominio</Name>
+    <ProjectReference Include="..\dominio\dominio.csproj">
+      <Project>{7e271486-4d3e-4397-8880-e9d22f5178be}</Project>
+      <Name>dominio</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Negocio\Negocio.csproj">
-      <Project>{06df721c-b1ba-4b20-90a9-6df9e7c7b1e1}</Project>
-      <Name>Negocio</Name>
+    <ProjectReference Include="..\negocio\negocio.csproj">
+      <Project>{d6d7e5c7-58c8-41fc-b7f3-e694d0dab54d}</Project>
+      <Name>negocio</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

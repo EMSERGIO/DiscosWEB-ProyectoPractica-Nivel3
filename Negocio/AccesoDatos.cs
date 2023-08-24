@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Dominio;
 using System.Data.SqlClient;
+using negocio;
 
-namespace Negocio
+namespace negocio
 {
     public class AccesoDatos
     {
@@ -19,13 +19,18 @@ namespace Negocio
         }
         public AccesoDatos()
         {
-            conexion = new SqlConnection("server=.\\SQLEXPRESS; database=CATALOGO_DB; integrated security=true");
+            conexion = new SqlConnection("server=.\\SQLEXPRESS; database=DISCOS_DB; integrated security=true");
             comando = new SqlCommand();
         }
         public void setearConsulta(string consulta)
         {
             comando.CommandType = System.Data.CommandType.Text;
             comando.CommandText = consulta;
+        }
+        public void setearProcedimiento(string sp)
+        {
+            comando.CommandType = System.Data.CommandType.StoredProcedure;
+            comando.CommandText = sp;
         }
         public void ejecutarLectura()
         {
