@@ -28,7 +28,7 @@ namespace DiscosWeb
         protected void dgvDiscos_SelectedIndexChanged(object sender, EventArgs e)
         {
             string id = dgvDiscos.SelectedDataKey.Value.ToString();
-            Response.Redirect("FormularioDiscos.aspx?id" + id);
+            Response.Redirect("FormularioDiscos.aspx?id=" + id);
         }
 
     }
