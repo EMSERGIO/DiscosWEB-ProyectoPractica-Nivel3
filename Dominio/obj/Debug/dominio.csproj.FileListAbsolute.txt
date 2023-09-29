@@ -10,3 +10,9 @@ C:\Users\sergi\OneDrive\Escritorio\Curso C# Nivel 2\WinFormsPractica\dominio\obj
 C:\Users\sergi\OneDrive\Escritorio\Curso C# Nivel 2\WinFormsPractica\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
 C:\Users\sergi\OneDrive\Escritorio\Curso C# Nivel 2\WinFormsPractica\dominio\obj\Debug\dominio.dll
 C:\Users\sergi\OneDrive\Escritorio\Curso C# Nivel 2\WinFormsPractica\dominio\obj\Debug\dominio.pdb
+C:\Users\sergi\OneDrive\Escritorio\ESTUDIO\CURSOS MAXI PROGRAMA\Curso C# Nivel 3\PrimeroProyectoWeb\dominio\bin\Debug\dominio.dll
+C:\Users\sergi\OneDrive\Escritorio\ESTUDIO\CURSOS MAXI PROGRAMA\Curso C# Nivel 3\PrimeroProyectoWeb\dominio\bin\Debug\dominio.pdb
+C:\Users\sergi\OneDrive\Escritorio\ESTUDIO\CURSOS MAXI PROGRAMA\Curso C# Nivel 3\PrimeroProyectoWeb\dominio\obj\Debug\dominio.csproj.AssemblyReference.cache
+C:\Users\sergi\OneDrive\Escritorio\ESTUDIO\CURSOS MAXI PROGRAMA\Curso C# Nivel 3\PrimeroProyectoWeb\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+C:\Users\sergi\OneDrive\Escritorio\ESTUDIO\CURSOS MAXI PROGRAMA\Curso C# Nivel 3\PrimeroProyectoWeb\dominio\obj\Debug\dominio.dll
+C:\Users\sergi\OneDrive\Escritorio\ESTUDIO\CURSOS MAXI PROGRAMA\Curso C# Nivel 3\PrimeroProyectoWeb\dominio\obj\Debug\dominio.pdb

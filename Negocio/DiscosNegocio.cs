@@ -215,7 +215,7 @@ namespace negocio
             }
 
         }
-        public List<Discos> filtrar(string campo, string criterio, string filtro)
+        public List<Discos> filtrar(string Campo, string Criterio, string Filtro)
         {
             List<Discos> lista = new List<Discos>();
             AccesoDatos datos = new AccesoDatos();
@@ -223,50 +223,50 @@ namespace negocio
             try
             {
                 string consulta = "select D.Titulo, FechaLanzamiento, UrlImagenTapa, CantidadCanciones, E.Descripcion Estilo, F.Descripcion TiposEdicion, D.IdEstilo, D.IdTipoEdicion, D.Id from DISCOS D, ESTILOS E, TIPOSEDICION F where  E.Id = D.IdEstilo and F.Id = D.IdTipoEdicion and ";
-                if (campo == "Cantidad de Canciones")
+                if (Campo == "Cantidad de Canciones")
                 {
-                    switch (criterio)
+                    switch (Criterio)
                     {
                         case "Mayor a":
-                            consulta += "CantidadCanciones > " + filtro;
+                            consulta += "CantidadCanciones > " + Filtro;
                             break;
                         case "Menor a":
-                            consulta += "CantidadCanciones < " + filtro;
+                            consulta += "CantidadCanciones < " + Filtro;
                             break;
                         default:
-                            consulta += "CantidadCanciones = " + filtro;
+                            consulta += "CantidadCanciones = " + Filtro;
                             break;
                     }
                 }
-                else if(campo == "Titulo")
+                else if(Campo == "Titulo")
                 {
 
-                     switch (criterio)
+                     switch (Criterio)
                      {
                          case "Comienza con":
-                             consulta += "D.Titulo like '" + filtro + "%' ";
+                             consulta += "D.Titulo like '" + Filtro + "%' ";
                              break;
                          case "Termina con":   
-                             consulta += "D.Titulo like '%" + filtro + "' ";
+                             consulta += "D.Titulo like '%" + Filtro + "' ";
                              break;     
                          default:   
-                             consulta += "D.Titulo like '%" + filtro + "%' ";
+                             consulta += "D.Titulo like '%" + Filtro + "%' ";
                              break;     
                      }
                 }
-                else if (campo == "Estilo")
+                else if (Campo == "Estilo")
                 {
 
-                     switch (criterio)
+                     switch (Criterio)
                      {
                           case "Comienza con":
-                              consulta += "E.Descripcion like '" + filtro + "%' ";
+                              consulta += "E.Descripcion like '" + Filtro + "%' ";
                               break;
                           case "Termina con":
-                              consulta += "E.Descripcion like '%" + filtro + "' ";
+                              consulta += "E.Descripcion like '%" + Filtro + "' ";
                               break;
                           default:
-                              consulta += "E.Descripcion like '%" + filtro + "%' ";
+                              consulta += "E.Descripcion like '%" + Filtro + "%' ";
                               break;
                      }
                 }
