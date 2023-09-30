@@ -10,6 +10,17 @@
     </asp:ContentPlaceHolder>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--<style>
+        body
+        {
+            background-image: url("https://c.wallhere.com/photos/14/51/music-1356809.jpg!d");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>-->
 </head>
 <body>
     <form id="form1" runat="server">
@@ -29,7 +40,7 @@
                                 <a class="nav-link" aria-current="page" href="DiscosListar.aspx">Lista de Discos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page">Favoritos</a>
+                                <a class="nav-link" aria-current="page" href="Favoritos.aspx">Favoritos</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="MiPerfil.aspx">Mi Perfil</a>
@@ -38,8 +49,9 @@
                     </div>
                 </div>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <asp:Button Text="Login" runat="server" class="btn btn-success" type="button" />
+                    <a href="Login.aspx" class="btn btn-success me-2">Login</a>
                     <a href="Registro.aspx" class="btn btn-outline-primary">Registrarse</a>
+                    <asp:Image ID="imgAvatar" Style="height: 40px; width: 40px; border-radius: 50%;" runat="server" />
                 </div>
             </nav>
             <div class="container">

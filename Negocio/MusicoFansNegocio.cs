@@ -22,6 +22,7 @@ namespace negocio
                 datos.setearProcedimiento("insertarNuevo");
                 datos.setearParametro("@email", nuevo.Email);
                 datos.setearParametro("@pass", nuevo.Pass);
+                return datos.ejecutarAccionScalar();
 
 
                 return 1;
@@ -30,6 +31,35 @@ namespace negocio
             {
                 throw ex;
             }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+        public bool Login(MusicoFans musicoFans)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("Select id, email, pass, admin from USERS Where email = @email And pass = @pass");
+                datos.setearParametro("@email", musicoFans.Email);
+                datos.setearParametro("@pass", musicoFans.Pass);
+                datos.ejecutarLectura();
+                if (datos.Lector.Read())
+                {
+                    musicoFans.Id = (int)datos.Lector["id"];
+                    musicoFans.Admin = (bool)datos.Lector["admin"];
+                    return true;
+                }
+                return false;   
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally { datos.cerrarConexion();}
         }
     }
 }

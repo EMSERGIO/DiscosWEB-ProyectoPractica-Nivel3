@@ -11,7 +11,7 @@ namespace DiscosWeb
 {
 
 
-    public partial class MiPerfil
+    public partial class Favoritos
     {
     }
 }

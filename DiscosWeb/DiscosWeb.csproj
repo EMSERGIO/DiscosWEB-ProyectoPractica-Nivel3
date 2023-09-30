@@ -70,8 +70,11 @@
     <Content Include="Default.aspx" />
     <Content Include="DetalleDiscos.aspx" />
     <Content Include="DiscosListar.aspx" />
+    <Content Include="Error.aspx" />
+    <Content Include="Favoritos.aspx" />
     <Content Include="FormularioDiscos.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Login.aspx" />
     <Content Include="MiPerfil.aspx" />
     <Content Include="Registro.aspx" />
     <Content Include="Web.config" />
@@ -98,12 +101,33 @@
     <Compile Include="DiscosListar.aspx.designer.cs">
       <DependentUpon>DiscosListar.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Favoritos.aspx.cs">
+      <DependentUpon>Favoritos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Favoritos.aspx.designer.cs">
+      <DependentUpon>Favoritos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FormularioDiscos.aspx.cs">
       <DependentUpon>FormularioDiscos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="FormularioDiscos.aspx.designer.cs">
       <DependentUpon>FormularioDiscos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Master.Master.cs">
       <DependentUpon>Master.Master</DependentUpon>
