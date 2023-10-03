@@ -23,9 +23,11 @@ namespace DiscosWeb
                 MusicoFans user = new MusicoFans();
                 MusicoFansNegocio musicoFansNegocio = new MusicoFansNegocio();
                 EmailService emailService = new EmailService();
+
                 user.Email = txtEmail.Text;
                 user.Pass = txtPassword.Text;
                 user.Id = musicoFansNegocio.insertarNuevo(user);
+                Session.Add("musicoFans", user);//queda abierta la session al registrandonos...
 
                 emailService.armarCorreo(user.Email, "Bienvenido Musico Fans", "Hola te damos la bienvenida a la aplicacion...");
                 emailService.enviarEmail();

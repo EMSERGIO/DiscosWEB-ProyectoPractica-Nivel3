@@ -9,6 +9,27 @@ namespace negocio
 {
     public class MusicoFansNegocio
     {
+        public void actualizar(MusicoFans user)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("Update USERS set imagenPerfil = @imagen where ID = @id");
+                datos.setearParametro("@imagen", user.ImagenPerfil);
+                datos.setearParametro("@id", user.Id);
+                datos.ejecutarAccion();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+
         //id, email, pass, admin false
 
         //nombre, apellido, fecha, imagen

@@ -19,11 +19,19 @@ namespace DiscosWeb
             //recordando que estamos en la MastewrPage principal, es el primera entrada despues de dar
             //la orden para redirigir a las pantallas a verificar
 
-            if (!(Page is Login))
+
+            //si no es ninguna de estas 3 paginas entra 
+            if (!(Page is Login || Page is Registro || Page is Default))
             {
                 if (!Seguridad.sesionActiva(Session["musicoFans"]))
                     Response.Redirect("Login.aspx", false);
             }
+        }
+
+        protected void btnSalir_Click(object sender, EventArgs e)
+        {
+            Session.Clear();
+            Response.Redirect("Login.aspx", false);
         }
     }
 }
